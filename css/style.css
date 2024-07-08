@@ -1,0 +1,456 @@
+/*======================
+  Install custom fonts
+========================*/
+@font-face {
+  font-family: "Switzer Variable";
+  src: url("../fonts/Switzer-Variable.ttf");
+}
+@font-face {
+  font-family: "Boska Variable";
+  src: url("../fonts/Boska-Variable.ttf");
+}
+@font-face {
+  font-family: "Boska Italic";
+  src: url("../fonts/Boska-VariableItalic.ttf");
+}
+
+/*======================
+  Global Style
+========================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Switzer Variable", Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+p {
+  color: #1b3936;
+  font-size: 24px;
+  margin: 20px 0;
+}
+section {
+  padding: 100px 0;
+}
+img {
+  height: auto;
+}
+
+/*======================
+  Common Style
+========================*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container-fluid {
+  padding: 15px;
+}
+.grid-2 {
+  grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-3 {
+  grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: center;
+}
+.color-white {
+  color: #fff;
+}
+.color-green {
+  color: #75ff69;
+}
+.bg-gray {
+  background: #f9f9f9;
+}
+.bg-green {
+  background: #1b3936;
+}
+.subTitle {
+  color: #1b3936;
+  font-size: 68px;
+  font-weight: normal;
+  font-family: "Boska Variable";
+  text-transform: capitalize;
+  line-height: 100px;
+}
+
+/*======================
+  Header Style
+========================*/
+.headerInner {
+  background: url(../img/Hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*======================
+  Main Menu Style
+========================*/
+.navbar {
+  margin: 0;
+  padding: 0;
+}
+.navbar li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar li a {
+  color: #fff;
+  margin: 25px 15px;
+  display: inline-block;
+  font-size: 18px;
+}
+.logo img {
+  margin: 16px 0px;
+}
+.rightMenu .navbar {
+  text-align: right;
+}
+
+/*======================
+  Hero Style
+========================*/
+.hero {
+  padding: 30px 0;
+}
+.hero h1 {
+  font-family: "Boska Variable";
+  font-size: 262px;
+  text-transform: capitalize;
+  font-weight: normal;
+  line-height: 230px;
+}
+.hero h1 .hero-small-text {
+  font-size: 32px;
+  display: block;
+  margin-top: -100px;
+  margin-bottom: -380px;
+  font-weight: bold;
+}
+.hero h1 .color-green {
+  font-family: "Boska Italic";
+  margin-left: 385px;
+}
+.hero p {
+  font-size: 18px;
+  max-width: 50%;
+  margin: 0 auto;
+  font-weight: normal;
+  padding: 30px 0;
+}
+
+/*======================
+  Welcome Style
+========================*/
+.counters {
+  margin-left: 100px;
+}
+.counter-title {
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 24px;
+}
+.counters .item:nth-child(2) {
+  margin: 100px 0;
+}
+.counters .item h3 .counter {
+  font-size: 100px;
+  font-family: "Boska Variable";
+  line-height: 65px;
+  font-weight: bold;
+}
+.counters .item h3 span {
+  font-size: 24px;
+  font-family: "Switzer Variable", Arial, sans-serif;
+  font-weight: normal;
+  margin-left: 10px;
+}
+.counters .item .sup {
+  font-size: 14px;
+  display: inline-block;
+  position: relative;
+  top: -8px;
+  left: -8px;
+}
+.welcome-image img {
+  width: 100%;
+  display: flex;
+}
+
+/*======================
+  About Style
+========================*/
+.about {
+  background: url(../img/about-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 150px 0;
+  position: relative;
+  padding-bottom: 540px;
+}
+
+.about h3.title {
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+.about .subTitle {
+  color: #678784;
+}
+.about-shadow img {
+  width: 100%;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+}
+
+/*======================
+  Services Style
+========================*/
+.services .grid-3 {
+  grid-template-columns: 1fr 1.5fr 1fr;
+  align-items: center;
+  padding: 100px 0;
+}
+.services .grid-3 img {
+  width: 100%;
+  height: auto;
+}
+.services .grid-3 .item {
+  position: relative;
+  height: max-content;
+}
+.services .grid-3 .item .title {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  font-size: 32px;
+  font-family: "Boska Variable";
+}
+.services .grid-3 .item.middle .desc {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  font-size: 32px;
+}
+.services .grid-3 .item.middle .desc .subTitle {
+  color: #fff;
+}
+.services .grid-3 .item.middle .desc p {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Switzer Variable", Arial, sans-serif;
+}
+.services .grid-2 {
+  grid-template-columns: 2fr 1fr;
+}
+.services-icon {
+  text-align: right;
+  margin-right: 45px;
+  margin-top: 35px;
+}
+.services .grid-2 img {
+  width: auto;
+}
+
+/*======================
+  Subscribe Style
+========================*/
+.subscribe .container {
+  background: url(../img/BG.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.subscribe h2.subTitle,
+.subscribe p {
+  color: #fff;
+}
+.subscribeInnter {
+  width: 50%;
+  margin: 0 auto;
+  padding: 150px 0;
+}
+.subscribeInnter p {
+  font-size: 20px;
+}
+.subscribeInnter form {
+  margin-top: 40px;
+}
+::placeholder {
+  color: #bbbbbb;
+}
+.subscribeInnter input[type="email"] {
+  border: 0;
+  outline: 0;
+  padding: 15px 15px;
+  font-size: 18px;
+  width: 70%;
+}
+.subscribeInnter input[type="submit"] {
+  border: 0;
+  outline: 0;
+  padding: 15px 20px;
+  font-size: 18px;
+  background: #75ff69;
+  color: #1b3936;
+  width: 30%;
+  cursor: pointer;
+}
+
+/*======================
+  Testimonials Style
+========================*/
+.testimonials .grid-2 {
+  grid-template-columns: 2fr 1fr;
+  align-items: end;
+}
+.testimonials .grid-2 .subTitle {
+  padding-right: 40px;
+}
+.testimonials .grid-2 p {
+  font-size: 18px;
+}
+.testimonial-items {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.testimonial-items .item-innter {
+  position: relative;
+}
+#testimonial-items .item .img {
+  overflow: hidden;
+}
+#testimonial-items .item img {
+  width: 80% !important;
+  float: right;
+  height: 477px;
+}
+.testimonial-items .item-innter .content {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  background: #fff;
+  width: 95%;
+  overflow: hidden;
+  padding: 20px;
+}
+.testimonial-items .item-innter .content i {
+  color: #ffd354;
+}
+.testimonial-items .item-innter .content h3 {
+  font-size: 22px;
+  font-family: "Switzer Variable", Arial, sans-serif;
+  font-weight: normal;
+  margin-top: 10px;
+}
+.testimonial-items .item-innter .content p {
+  font-size: 16px;
+  font-family: "Switzer Variable", Arial, sans-serif;
+  margin-bottom: 0;
+}
+
+#testimonial-items .owl-prev,
+#testimonial-items .owl-next {
+  background: #1b3936;
+  color: #fff;
+}
+#testimonial-items .owl-nav > button {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  transition: 0.4s;
+  margin-top: 100px;
+}
+#testimonial-items .owl-prev:hover,
+#testimonial-items .owl-next:hover {
+  background: #75ff69;
+  color: #1b3936;
+}
+
+/*======================
+  Contact Style
+========================*/
+.contact .grid-2 {
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+.contact p {
+  font-size: 18px;
+}
+.contact a {
+  color: #1b3936;
+  border: 1px solid #1b3936;
+  font-size: 18px;
+  padding: 10px 35px;
+  border-radius: 100%;
+  margin-top: 40px;
+  display: inline-block;
+}
+
+/*======================
+  Footer Top Style
+========================*/
+.footer-top .grid-3 {
+  grid-gap: 0px;
+}
+.footer-top .grid-3 .item {
+  padding: 80px 0;
+}
+.footer-top .item.grid-2 {
+  grid-template-columns: 3fr 1fr;
+}
+.footer-top .item:nth-child(1) {
+  background: #75ff69;
+  padding-left: 100px;
+  position: relative;
+}
+.footer-top .item:nth-child(1) .content {
+  margin-top: 20%;
+}
+.footer-top .item:nth-child(1) img {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.footer-top .item:nth-child(1) .subTitle {
+  line-height: 30px;
+}
+.footer-top .item:nth-child(1) p {
+  font-size: 16px;
+}
+
+.footer-top .item.bg-green {
+  padding-left: 100px;
+}
+.footer-top .item.bg-green .subTitle {
+  color: #fff;
+}
+.footer-top .item.bg-green p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}
+.footer-top .item.bg-green img {
+  margin-bottom: -15px;
+}
+
+/*======================
+  Footer Bottom Style
+========================*/
+.footer-bottom .footer-menu a {
+  color: #1b3936;
+  margin: 24px;
+  display: inline-block;
+  font-size: 18px;
+}
